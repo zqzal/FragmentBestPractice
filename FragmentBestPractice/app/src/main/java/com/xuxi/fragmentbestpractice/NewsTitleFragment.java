@@ -67,10 +67,7 @@ public class NewsTitleFragment extends Fragment {
         }
 
 
-        Log.d(TAG, "onClick: "+getFragmentManager().findFragmentById(R.id.news_context_fragment));
-        Log.d(TAG, "onClick: "+getFragmentManager().findFragmentById(R.id.news_context_fragment));
-
-        Log.d(TAG, "onActivityCreated: " + getChildFragmentManager().findFragmentById(R.id.news_context_fragment));
+        Log.d(TAG, "onClick: "+getFragmentManager().findFragmentById(R.id.news_content_fragment));
 
     }
 
@@ -113,15 +110,11 @@ public class NewsTitleFragment extends Fragment {
 //                        newsContentFragment.refresh(news.getTittle(),news.getContent());
 //                        Log.d(TAG, "onClick: " + newsContentFragment);
 
-                        NewsContentFragment fragment = (NewsContentFragment) getFragmentManager().findFragmentById(R.id.news_context_fragment);
-                        newsContentFragment.refresh(news.getTittle(),news.getContent());
+                        NewsContentFragment fragment = (NewsContentFragment) getFragmentManager().findFragmentById(R.id.news_content_fragment);
+                        fragment.refresh(news.getTittle(),news.getContent());
 
                         
-                        Log.d(TAG, "onClick: "+getFragmentManager().findFragmentById(R.id.news_context_fragment));
-                        Log.d(TAG, "onClick: "+getFragmentManager().findFragmentById(R.id.news_context_fragment));
-                        Log.d(TAG, "onClick: "+getFragmentManager().findFragmentById(R.id.news_context_fragment));
-                        Log.d(TAG, "onClick: "+getFragmentManager().findFragmentById(R.id.news_context_fragment));
-                        Log.d(TAG, "onClick: "+getFragmentManager().findFragmentById(R.id.news_context_fragment));
+                        Log.d(TAG, "onClick: "+getFragmentManager().findFragmentById(R.id.news_content_fragment));
                         Log.d(TAG, "onClick: "+getFragmentManager().findFragmentById(R.id.news_context_fragment));
 
                     }else {
