@@ -118,6 +118,9 @@ public class NewsTitleFragment extends Fragment {
                         Log.d(TAG, "onClick: "+getFragmentManager().findFragmentById(R.id.news_context_fragment));
                         Log.d(TAG, "onClick: "+getFragmentManager().findFragmentById(R.id.news_context_fragment));
                         Log.d(TAG, "onClick: "+getFragmentManager().findFragmentById(R.id.news_context_fragment));
+                        Log.d(TAG, "onClick: "+getFragmentManager().findFragmentById(R.id.news_context_fragment));
+                        Log.d(TAG, "onClick: "+getFragmentManager().findFragmentById(R.id.news_context_fragment));
+                        Log.d(TAG, "onClick: "+getFragmentManager().findFragmentById(R.id.news_context_fragment));
 
                     }else {
                         NewContentActivity.actionStart(getActivity(),news.getTittle(),news.getContent());
